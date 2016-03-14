@@ -1,0 +1,15 @@
+//function to calculate the total principal and interest on the initial amount of money inputted		
+function calculate() {
+	var amount = parseFloat(document.getElementById('deposit').value);
+	var periods = parseInt(document.getElementById('term').value);
+	var index = document.getElementById('rate').selectedIndex;
+	var rateApplied = parseFloat(document.getElementById('rate').options[index].value);
+			    	
+	if(document.getElementById('monthly').checked){
+		amount *= Math.pow((1+rateApplied/12), periods);
+	}else{
+		periods /= 12;
+		amount *= Math.pow((1+rateApplied), periods);
+	}
+	document.getElementById('final').value = amount.toFixed(2);
+}
