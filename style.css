@@ -1,0 +1,19 @@
+body {
+	font-family: arial;
+	font-size: 1.2em;
+	background: url(moneyTree.jpg) no-repeat center center; 
+  	background-size: cover;
+  	height: 800px;
+  	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+table {
+	margin: 0px 80% 0px 20%;
+	background-color: #9BB12A;
+	float: left;
+}
